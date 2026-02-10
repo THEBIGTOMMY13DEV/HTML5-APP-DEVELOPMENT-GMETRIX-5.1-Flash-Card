@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #1f2933; /* GMETRIX dark navy */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flash card container */
+#Flash-Card {
+    background: #ffffff;
+    width: 85%;
+    max-width: 900px;
+    padding: 30px 40px;
+    border: 6px solid navy; /* GMETRIX red */
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Topic title */
+#Flash-Card h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 26px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+/* Description text */
+#Flash-Card h2 {
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: normal;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Code example block */
+#Flash-Card h3 {
+    margin-top: 25px;
+    background: #0f172a; /* GMETRIX-style dark code */
+    color: #e5e7eb;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    padding: 18px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    border: 5px solid navy;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5-APP-DEVELOPMENT-GMETRIX-5.1-Flash-Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="Flash-Card">
+        <h1>5.1 Create and use custom classes</h1>
+        <h2>You would Create and use Custom Classes if your building an MMORPG fighter game on the web like the OOP lab
+            we did. It used Custom Classes for the Different Characters.</h2>
+        <h3>let fighter = { //Declaration of the Fighter Character Class.
+  name: "Fighter", 
+  health: 50,
+  armorClass: 18,
+  level: 5,
+  heal: function() {
+    this.health = this.health + 10;
+    console.log(this.name + " heals! Health is now " + this.health);
+  },
+  levelUp: function(){
+    this.level = this.level + 1;
+    console.log(this.name + " You Leveled Up! Your level is now " + this.level);
+  }
+};</h3>
+    </div>
+</body>
+
+</html>

@@ -2,26 +2,26 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: #1f2933; /* GMETRIX dark navy */
+    background: #1f2933; 
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Flash card container */
-#Flash-Card {
+
+#Card {
     background: #ffffff;
     width: 85%;
-    max-width: 900px;
+    max-width: 1100px;
     padding: 30px 40px;
-    border: 6px solid navy; /* GMETRIX red */
+    border: 6px solid navy; 
     border-radius: 6px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
-/* Topic title */
-#Flash-Card h1 {
+
+#Card h1 {
     margin: 0;
     color: #111827;
     font-size: 26px;
@@ -29,8 +29,8 @@ body {
     border-bottom: 2px solid #e5e7eb;
 }
 
-/* Description text */
-#Flash-Card h2 {
+
+#Card h2 {
     margin-top: 18px;
     font-size: 17px;
     font-weight: normal;
@@ -38,10 +38,10 @@ body {
     line-height: 1.6;
 }
 
-/* Code example block */
-#Flash-Card h3 {
+
+#Card h3 {
     margin-top: 25px;
-    background: #0f172a; /* GMETRIX-style dark code */
+    background: #0f172a;
     color: #e5e7eb;
     font-family: Consolas, "Courier New", monospace;
     font-size: 14px;
@@ -50,4 +50,80 @@ body {
     white-space: pre-wrap;
     line-height: 1.5;
     border: 5px solid navy;
+}
+
+#question {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9fafb;
+    border-left: 6px solid navy;
+    border-radius: 4px;
+}
+
+
+#GmetrixCodeSnippet{
+    color: #120000;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 15px;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+#GmetrixQuestion {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+}
+#Choices {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#Choicebtn {
+    position: relative;
+    text-align: left;
+    padding: 14px 18px;
+    font-size: 15px;
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #374151;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+#Choicebtn:hover {
+    background: #eef2ff;
+    border-color: #c81e2b;
+}
+
+
+#Choicebtn.correct {
+    background: #ecfdf5;
+    border-color: #16a34a;
+    color: #065f46;
+    cursor: default;
+}
+
+/* Wrong answer */
+#Choicebtn.wrong {
+    background: #fef2f2;
+    border-color: #dc2626;
+    color: #7f1d1d;
+    cursor: default;
+}
+
+/* Checkmark icon */
+#Choicebtn.correct::after {
+    content: "✔";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #16a34a;
 }

@@ -9,25 +9,42 @@
 </head>
 
 <body>
-    <div id="Flash-Card">
+    <div id="Card">
         <h1>5.1 Create and use custom classes</h1>
         <h2>You would Create and use Custom Classes if your building an MMORPG fighter game on the web like the OOP lab
             we did. It used Custom Classes for the Different Characters.</h2>
         <h3>let fighter = { //Declaration of the Fighter Character Class.
-  name: "Fighter", 
-  health: 50,
-  armorClass: 18,
-  level: 5,
-  heal: function() {
-    this.health = this.health + 10;
-    console.log(this.name + " heals! Health is now " + this.health);
-  },
-  levelUp: function(){
-    this.level = this.level + 1;
-    console.log(this.name + " You Leveled Up! Your level is now " + this.level);
-  }
-};</h3>
+    name: "Fighter", //This is a Propery of the Class being Constructed which is the name of the Fighter which is named fighter.
+    health: 50, //This is a Property that is Controlling How much health the fighter has when the game starts.
+    armorClass: 18, //This is a Property that is the Armor Class the Fighter is at when the game starts.
+    level: 5, //This is a Property that is the Level that the Fighter is at when the game starts.
+    heal: function() { //This is a Method Being Created for Something to Happen for the Class which in this case is heal the fighter.
+        this.health = this.health + 10; //This Sets the Health of the fighter to the current health plus 10.
+        console.log(this.name + " heals! Health is now " + this.health); //This console logs that the Healing Worked Succesfully.
+    },
+    levelUp: function() {
+        this.level = this.level + 1;
+        console.log(this.name + " You Leveled Up! Your level is now " + this.level);
+    }
+};
+fighter.heal();</h3>
+        <div id="question">
+            <div id="GmetrixCodeSnippet">
+                return this.Calculation();
+            </div>
+
+            <div id="GmetrixQuestion">
+                What does the calculation represent?
+            </div>
+        </div>
+        <div id="Choices">
+            <button id="Choicebtn" data-correct="false">Instantiation</button>
+            <button id="Choicebtn" data-correct="true">Method</button>
+            <button id="Choicebtn" data-correct="false">Inheritance</button>
+            <button id="Choicebtn" data-correct="false">Property</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
